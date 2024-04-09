@@ -8,9 +8,14 @@ button.addEventListener('click', e => {
     let totalSegundo = milhaoToken/tokenPorSegundo.value
     let totalTokenHora = totalSegundo/3600
     let custoMilhaoTokenNossaVM = (custoHoraVM.value)*totalTokenHora
+    let custoResultado = document.getElementById('custoResultado')
+    if (custoMilhaoTokenNossaVM < 10) {
+        custoResultado.innerHTML = "Custo por 1M de tokens: $0" + custoMilhaoTokenNossaVM.toFixed(2)
+    } else {
+        custoResultado.innerHTML = "Custo por 1M de tokens: $" + custoMilhaoTokenNossaVM.toFixed(2)
+    }
 
     console.log('custo do milhao de token na nossa VM: ' + custoMilhaoTokenNossaVM.toFixed(2))
-    alert('custo do milhao de token na nossa VM: ' + custoMilhaoTokenNossaVM.toFixed(2))
 })
 
 form.addEventListener("submit", (e) => {
