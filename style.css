@@ -7,7 +7,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
     margin-top: 50px;
     align-items: center;
@@ -49,7 +49,7 @@ button:hover {
     outline: none;
     color: black;
     font-size: 17px;
-    width: 95%;
+    width: 100%;
     letter-spacing: 1px;
     border-radius: 8px;
 }
