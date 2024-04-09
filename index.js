@@ -3,7 +3,7 @@ let form = document.getElementById('form')
 
 button.addEventListener('click', e => {
     calcular()
-}
+})
     
 function calcular() {
     let tokenPorSegundo = document.getElementById('idToken')
@@ -20,7 +20,7 @@ function calcular() {
     }
 
     console.log('custo do milhao de token na nossa VM: ' + custoMilhaoTokenNossaVM.toFixed(2))
-})
+}
 
 form.addEventListener("submit", (e) => {
     e.preventDefault()
