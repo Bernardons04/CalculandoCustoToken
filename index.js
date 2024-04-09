@@ -2,6 +2,10 @@ let button = document.getElementById('button')
 let form = document.getElementById('form')
 
 button.addEventListener('click', e => {
+    calcular()
+}
+    
+function calcular() {
     let tokenPorSegundo = document.getElementById('idToken')
     let custoHoraVM = document.getElementById('idCusto')
     let milhaoToken = 1000000
@@ -20,4 +24,5 @@ button.addEventListener('click', e => {
 
 form.addEventListener("submit", (e) => {
     e.preventDefault()
+    calcular()
 })
