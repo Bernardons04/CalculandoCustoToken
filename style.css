@@ -42,6 +42,7 @@ button:hover {
 
 .inpuBox{
     position: relative;
+    margin: 0 auto;
 }
 
 .inputUser {
@@ -52,8 +53,10 @@ button:hover {
     color: black;
     font-size: 17px;
     width: 100%;
+    margin: 0 auto;
     letter-spacing: 1px;
     border-radius: 8px;
+    margin: 0 auto;
 }
 
 .labelAnimada {
